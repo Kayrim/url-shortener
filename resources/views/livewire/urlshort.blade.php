@@ -1,5 +1,5 @@
     <main class="flex-1 py-10 md:py-16 lg:py-20 xl:py-24">
-        <div class="container grid gap-4 px-4 text-center md:px-6 mx-auto">
+        <div class="container grid gap-4 px-0 text-center md:px-6 mx-auto">
             <div class="space-y-3">
                 <h1 class="text-3xl font-bold tracking-tighter">Shorten your link</h1>
                 <p
@@ -27,7 +27,7 @@
                     @if ($urls->isNotEmpty())
                         <h2 class="text-xl font-bold mt-4">Your shortened URLs</h2>
                         <div
-                            class="overflow-y-auto max-h-96 gap-2 flex flex-col scrollbar-thin scrollbar-thumb-red-600 scrollbar-thumb-rounded-md scrollbar-track-zinc-800">
+                            class="overflow-y-auto max-h-80 gap-2 flex flex-col scrollbar-thin scrollbar-thumb-red-600 scrollbar-thumb-rounded-md scrollbar-track-zinc-800">
                             @foreach ($urls as $url)
                                 <div class="flex items-center gap-2 px-1">
                                     <a class="underline bg-white text-gray-500 rounded-md p-2 flex-1"
