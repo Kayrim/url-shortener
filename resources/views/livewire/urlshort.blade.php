@@ -3,8 +3,7 @@
     <div class="container grid gap-4 px-4 text-center md:px-6 mx-auto">
         <div class="space-y-3">
             <h1 class="text-3xl font-bold tracking-tighter">Shorten your link</h1>
-            <p
-                class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p class="mx-auto max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Enter your long URL below to shorten it
             </p>
         </div>
