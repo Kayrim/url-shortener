@@ -1,5 +1,6 @@
 <?php
+use App\Models\ShortenedUrl;
 
-Schedule::call(function () {
-    DB::table('shortened_urls')->where('created_at', '<', now()->subHour())->delete();
-})->hourly();
+Artisan::command('url:clear', function () {
+    ShortenedUrl::where('created_at', '<', now()->subHour())->delete();
+})->describe('Clear all URLs')->everyMinute();

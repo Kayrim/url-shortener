@@ -20,7 +20,7 @@
         <div
             class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
             <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                <livewire:urlshort />
+                {{ $slot }}
                 <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                     URL Shortener using Laravel, Livewire, and Tailwind CSS
                 </footer>
