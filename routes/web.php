@@ -9,7 +9,3 @@ Route::get('/', function () {
 
 Route::get('{shortCode}', [RedirectController::class, 'redirect'])->name('redirect.short');
 
-Route::get('/short', function () {
-    return view('livewire.urlshort');
-});
-
